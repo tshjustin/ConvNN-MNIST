@@ -3,20 +3,18 @@ import cv2
 import torch
 import streamlit as st
 from streamlit_drawable_canvas import st_canvas
-from NNModel import DeepNN
-import os 
+from NNModel import CNN
 
-model = DeepNN() # Instantiate the Model
+model = CNN() # Instantiate the Model
 
-model.load_state_dict(torch.load("deep_snn_model.pth", map_location=torch.device('cpu'))) # Same Directory as Current Script
+model.load_state_dict(torch.load("deep_snn_model.pth", map_location=torch.device('cpu'))) # Same Directory as Current Script - Load Trained Model
 
-model.eval()
+model.eval() # Inference 
 
 st.set_page_config(page_title="MLDA Project", page_icon=":tada:", layout = "wide")
 
-
 with st.container():
-    st.subheader("Justin's Project")
+    st.header("Justin's Project")
     st.title("Small Machine Learning Project using the MNSIT Dataset")
 
 
