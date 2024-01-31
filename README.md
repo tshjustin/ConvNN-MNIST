@@ -1,4 +1,4 @@
-# MLDA-DecProj23
+# MLDA December 23 Project
 
 CNN model for the identification of handwritten digits. 
 
