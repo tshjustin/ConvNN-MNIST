@@ -6,7 +6,7 @@ dependencies:
   - libffi=3.4.4
   - openssl=3.0.12
   - pip=23.3.1
-  - python=3.8.18
+  - python>=3.9
   - setuptools=68.2.2
   - sqlite=3.41.2
   - wheel=0.41.2
@@ -156,4 +156,3 @@ dependencies:
       - websocket-client==1.7.0
       - widgetsnbextension==4.0.9
       - zipp==3.17.0
-prefix: 
