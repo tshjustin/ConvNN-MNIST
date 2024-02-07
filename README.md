@@ -15,3 +15,8 @@ CNN model for the identification of handwritten digits.
 Motivation for CNN referenced from : https://www.youtube.com/watch?v=BzcBsTou0C0&list=PLQVvvaa0QuDdeMyHEYc0gxFpYwHY2Qfdh
 
 MNIST JPEG: https://github.com/teavanist/MNIST-JPG
+
+**Try it yourself** - Hosted on Streamlit Cloud
+https://convnn-appuction-6ohqw6d7njgf2bnytprl7e.streamlit.app/
+
+
