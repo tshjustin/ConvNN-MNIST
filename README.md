@@ -10,5 +10,6 @@ The model is implemented twice, once in Pytorch and the other in Tensorflow. Bot
 
 More kernels are added to the layer but with no apparent increase in accuracy, but adding another convolutional layer improved the accuracy to 99%. 
 
-**Try it yourself** - Hosted on Streamlit Cloud
-https://convnn-appuction-6ohqw6d7njgf2bnytprl7e.streamlit.app/
+**Demo on Render**
+
+https://convnn-mnist.onrender.com/
