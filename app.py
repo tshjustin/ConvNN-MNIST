@@ -43,10 +43,10 @@ if canvas_result.image_data is not None and canvas_result.image_data.any():
     st.image(rescaled)
 
     if st.button('Predict'):
-        #convert image from colour to gray
+        # convert image from colour to gray
         test_x = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
         
-        #change the values from [0,255] to [0,1] then convert the numpy array to a torch tensor
+        # change the values from [0,255] to [0,1] then convert the numpy array to a torch tensor
         bwx = torch.from_numpy(test_x.reshape(1, 28, 28)/255)
         
         #change input to float from double then unsqueeze changes from (1,28,28) to (1,1,28,28)
