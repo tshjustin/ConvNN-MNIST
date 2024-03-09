@@ -1,22 +1,14 @@
-# MLDA December 23 Project
+## Testing with CNN
 
-CNN model for the identification of handwritten digits. 
+Testing convolutional neural network model for the identification of handwritten digits. 
 
-**Setting up and Running**
+### Model used 
+A CNN model of 2 blocks of Conv-Maxpool pair are used, with the layers having 12 kernels each. An optimizer of SGD & loss function of Cross Entropy loss is used.
 
-1. git clone ~url
+### Implementation 
+The model is implemented twice, once in Pytorch and the other in Tensorflow. Both accuracy are around the same at 98%. 
 
-2. conda env create -f environment.yml
-
-3. conda activate environment
-
-4. streamlit run app.py 
-
-Motivation for CNN referenced from : https://www.youtube.com/watch?v=BzcBsTou0C0&list=PLQVvvaa0QuDdeMyHEYc0gxFpYwHY2Qfdh
-
-MNIST JPEG: https://github.com/teavanist/MNIST-JPG
+More kernels are added to the layer but with no apparent increase in accuracy, but adding another convolutional layer improved the accuracy to 99%. 
 
 **Try it yourself** - Hosted on Streamlit Cloud
 https://convnn-appuction-6ohqw6d7njgf2bnytprl7e.streamlit.app/
-
-

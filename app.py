@@ -8,20 +8,17 @@ from model.NNModel import Network
 # Loading the Model
 model = Network() 
 model.load_state_dict(torch.load("model/net.pth", map_location=torch.device("cpu"))) # Same Directory as Current Script - Load Trained Model
-
-model.eval() # Model ready for Inference 
+model.eval() 
 
 st.set_page_config(page_title="MLDA Project", page_icon=":tada:", layout = "wide")
 
 with st.container():
     st.title("Using Convolutional Neural Network to predict Handwritten Digits")
-    st.subheader("This is a Mini Project using the MNIST dataset to train a CNN Model and read hand written digits.")
     st.caption("Training Model can be found on GitHub")
     st.link_button(label='GitHub Link', url='https://github.com/tshjustin/MLDA-DecProj23')
 st.divider()
 
-text = st.text_area(label='Short Description:', value="Write any digit from 0-9 in the box and click Predict." 
-                "The model would estimate the digit and output a corresponding label. The barchart shows the likehood of the numbers that was predicted by the Model.")
+text = st.text_area(label='Short Description:', value="Write any digit from 0-9 in the box and click Predict. The barchart shows the likehood of the numbers that was predicted by the Model.")
 
 st.markdown('''Try writing a digit!''')
 SIZE = 192
