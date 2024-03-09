@@ -8,5 +8,5 @@ jobs:
   keep_alive:
     runs-on: ubuntu-latest
     steps:
-      - name: ping streamlit App
-        run: curl https://convnn-appuction-6ohqw6d7njgf2bnytprl7e.streamlit.app/
+      - name: ping render app
+        run: curl https://convnn-mnist.onrender.com/
